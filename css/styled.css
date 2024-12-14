@@ -260,6 +260,18 @@ h1 {
     flex-direction: column;
     width: 100%;
   }
+  .howItWorks_body_content::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100px;
+    width: 139px;
+    height: 500px;
+    background: url(../src/dotsBG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .howItWorks_content_Box {
     width: 480px;
     min-height: 200px;
@@ -323,7 +335,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     width: 90%;
-    max-width: 1400px;   
+    max-width: 1400px;
+    font-size: 22px;   
   }
   .howItWorks_body_ections_body > li {
     display: flex;
@@ -337,9 +350,7 @@ h1 {
     background-position: 10px left;
     background-repeat: no-repeat;
   }
-  .howItWorks_body_ections_body > li:nth-child(2) {
-
-  }
+  
   .howItWorks_whiteBox {
     position: relative;
     width: 100%;
