@@ -212,7 +212,7 @@ h1 {
     justify-content: space-between;
     padding-top: 70px;   
     width: 100%;
-    min-height: 745px;
+    min-height: 745px;    
     background: linear-gradient(175.4deg, #FFFFFF 2.52%, #FFFEF9 38.15%, #F3EC5E 72.28%, #FF8C00 121.13%),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));    
   }
@@ -223,8 +223,7 @@ h1 {
     justify-content: space-between; 
     align-items: center; 
     text-align: center;
-    height: 500px;
-    
+    height: 500px;       
   }
   .howItWorks_title {
     position: relative;
@@ -412,6 +411,9 @@ h1 {
         justify-content: center; 
         align-items: center; 
         text-align: center;
+    }
+    .howItWorks {
+        overflow: hidden;
     }
     .howItWorks_body {
         height: 700px;
