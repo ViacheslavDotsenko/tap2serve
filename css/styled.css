@@ -267,7 +267,7 @@ h1 {
     left: 0;
     top: 100px;
     width: 139px;
-    height: 500px;
+    height: 600px;
     background: url(../src/dotsBG.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,7 +337,8 @@ h1 {
     justify-content: space-around;
     width: 90%;
     max-width: 1400px;
-    font-size: 22px;   
+    font-size: 22px;
+    z-index: 10;   
   }
   .howItWorks_body_ections_body > li {
     display: flex;
@@ -357,6 +358,160 @@ h1 {
     width: 100%;
     height: 35px;
     background-color: #fff;
+  }
+
+  /*---------- payMethods -----------*/
+  .payMethods {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 1400px;
+    overflow: hidden;
+  }
+  .payMethods::before {
+    content: "";
+    position: absolute;
+    right: -300px;
+    top: 30%;
+    width: 620px;
+    height: 620px;
+    background-color: #FACC15;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .monetizeWiFi {
+    flex: 1;
+  }
+  
+  .monetizeWiFi_body {    
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    padding: 7rem 0 0 0;
+  }
+
+  /* --img bounce--  */  
+
+  .monetizeWiFi_images {    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex: 1;
+    min-height: 550px;
+    display: flex;    
+  }
+  .monetizeWiFi_images::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 0;
+    top: 30%;
+    border-radius: 50%;
+    background-color: #FEF3C7;
+    
+  }
+  .monetizeWiFi_images::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    background-color: #FF8C00;
+    bottom: 0;
+    left: 20%;
+  }
+  .monetizeWiFi_images_left,
+  .monetizeWiFi_images_right {
+    position: relative;
+    flex: 1;   
+    height: 550px;
+  }
+  .monetizeWiFi_images_left::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    top: 0;
+    left: 30%;
+    background-image: url(../src/bg_Left_befor.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .monetizeWiFi_images_left::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 242px;
+    height: 242px;
+    left: 15%;
+    top: 42%;
+    background-image: url(../src/bg_left_img.jpg);
+    background-position: center;
+    background-size: cover;
+
+  }
+  .monetizeWiFi_images_right::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 92px;
+    height: 92px;
+    background-color: #F8DF6E;
+    left: 0;
+    bottom: 20%;
+  }
+  .monetizeWiFi_images_right::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 217px;
+    height: 217px;
+    left: 0;
+    top: 25%;
+    background-image: url(../src/BG_wifi_phone.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .monetizeWiFi_content {
+    flex: 1;
+    align-content: center;
+  }
+ 
+  .monetizeWiFi_pre-title {
+    margin-bottom: 0.5rem;
+    color:  #D97706;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .monetizeWiFi_title {
+    margin-bottom: 3rem;
+    font-weight: 800;
+    font-size: 48px;    
+  }
+  .monetizeWiFi_Sub-title {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .monetizeWiFi_Sub-title-disc {
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 2rem;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url(../src/chekin_icon.svg);
+  }
+
+  .howMuchCost {
+    flex: 1;
   }
 
 
@@ -447,6 +602,12 @@ h1 {
     .secondaryBox::after {
         right: -20%;
         top: -150px;
+    }
+    .monetizeWiFi_body {
+      flex-direction: column;
+    }
+    .monetizeWiFi_content {
+      margin-left: 20px;
     }
    
     
