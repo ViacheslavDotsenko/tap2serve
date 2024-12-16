@@ -38,6 +38,7 @@ ul, ol {
 }
 h1 {
     visibility: hidden;
+    font-size: 1px;
 }
 
 .wrapper {
@@ -407,10 +408,11 @@ h1 {
         position: absolute;
         right: 10px;
         top: -300%;
-        padding: 4rem 4rem 5rem 2rem;
+        padding: 4rem 4rem 5rem 3rem;
         background-color: #f2e644;
         border-radius: 10px;
         z-index: 2;
+        font-size: 22px;
         transition: all 0.3s ease;
     }
     .main_body {
@@ -452,4 +454,5 @@ h1 {
 
 .navShow {
     top: 10%;
+
 }
