@@ -380,16 +380,13 @@ h1 {
     border-radius: 50%;
     z-index: -1;
   }
-  .monetizeWiFi {
-    flex: 1;
-  }
-  
+    
   .monetizeWiFi_body {    
     display: flex;
     flex-direction: row;
     align-items: stretch;
     width: 100%;
-    padding: 7rem 0 0 0;
+    padding: 7rem 0;
   }
 
   /* --img bounce--  */  
@@ -484,18 +481,21 @@ h1 {
     align-content: center;
   }
  
-  .monetizeWiFi_pre-title {
+  .monetizeWiFi_pre-title,
+  .howMuchCost_pre-title {
     margin-bottom: 0.5rem;
     color:  #D97706;
     font-weight: 500;
     font-size: 20px;
   }
-  .monetizeWiFi_title {
+  .monetizeWiFi_title,
+  .howMuchCost_title {
     margin-bottom: 3rem;
     font-weight: 800;
     font-size: 48px;    
   }
-  .monetizeWiFi_Sub-title {
+  .monetizeWiFi_Sub-title,
+  .howMuchCost_Sub-title {
     margin-bottom: 3rem;
     font-weight: 400;
     font-size: 22px;
@@ -512,6 +512,11 @@ h1 {
 
   .howMuchCost {
     flex: 1;
+  }
+  .howMuchCost_price {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 70px;
   }
 
 
@@ -622,6 +627,9 @@ h1 {
     }
     .monetizeWiFi_content {
       margin-left: 20px;
+    }
+    .howMuchCost_body {
+      padding-left: 25px;
     }
    
     
