@@ -372,7 +372,7 @@ h1 {
   .payMethods::before {
     content: "";
     position: absolute;
-    right: -300px;
+    right: -250px;
     top: 30%;
     width: 620px;
     height: 620px;
@@ -513,10 +513,44 @@ h1 {
   .howMuchCost {
     flex: 1;
   }
+  .howMuchCost_body {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
   .howMuchCost_price {
     margin-bottom: 3rem;
     font-weight: 700;
     font-size: 70px;
+  }
+  .howMuchCost_visual {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .howMuchCost_tagValue,
+  .howMuchCost_locationValue {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 150px;
+    width: 495px;
+    background-color: #fff;
+    background-image: url(../src/Slider-1.svg);
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    border-radius: 30px;    
+    box-shadow: 0 0 25px 20px #0000001A;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .howMuchCost_locationValue {
+    background-image: url(../src/Slider-2.svg);
+  }
+  .howMuchCost_hint {
+    font-size: 20px;
+    color:  #D97706;
   }
 
 
@@ -629,6 +663,7 @@ h1 {
       margin-left: 20px;
     }
     .howMuchCost_body {
+      flex-direction: column;
       padding-left: 25px;
     }
    
