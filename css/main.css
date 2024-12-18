@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Roboto:wght@400;500;700&display=swap');
+@import url('./header.css');
+@import url('./form_checkbox.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -82,91 +85,8 @@ h1 {
     padding: 0 1rem;
 }
 
-
-
-/*---- header---*/
-
-
-.header {
-    padding: 1rem 0;
-}
-.header_body {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 80px;
-    
-}
-.header_body_navigation {
-    display: flex;
-    
-}
-.header_nav {
-    align-content: center;
-    padding: 0 1rem;
-}
-.header_nav_link {
-    display: flex;
-    gap: 3rem;
-    font-weight: 500;
-}
-.header_nav_link > li {
-    white-space: nowrap;
-}
-.hiddenNav {
-    background-color: #f2e644;
-}
-/*--------- burger -----*/
-.header_burger {
-    display: block;
-    position: relative;
-    margin: auto 1rem;
-    width: 35px;
-    height: 25px;
-    z-index: 3;
-}
-.header_burger:before,
-  .header_burger:after {
-    content: "";
-    background-color: #000000;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-  .header_burger:before {
-    content: '';
-    top: 0px;
-  }
-  .header_burger.active::before {
-    top: 11px;
-    transform: rotate(-45deg);
-  }
-  .header_burger:after {
-    content: '';
-    bottom: 0;
-    transition: all 0.3s ease;
-  }
-  .header_burger.active::after {
-    bottom: 11px;
-    transform: rotate(45deg);
-  }
-  .header_burger span {
-    position: absolute;
-    background-color: #000000;
-    width: 100%;
-    height: 2px;
-    top: 48%;
-    transition: all 0.3s ease;
-  }
-  .header_burger.active span {
-    transform: scale(0.1);
-    
-    
-  }
   /*---------main section -----*/
+  
   .main {
     padding: 5rem 0;
   }
@@ -512,11 +432,13 @@ h1 {
 
   .howMuchCost {
     flex: 1;
+
   }
   .howMuchCost_body {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    justify-content: space-around;
+    
   }
   .howMuchCost_price {
     margin-bottom: 3rem;
@@ -548,10 +470,13 @@ h1 {
   .howMuchCost_locationValue {
     background-image: url(../src/Slider-2.svg);
   }
+  
+
   .howMuchCost_hint {
     font-size: 20px;
-    color:  #D97706;
+    color:  #D97706;    
   }
+
 
 
 
@@ -602,12 +527,17 @@ h1 {
 
 }
 @media (max-width: 980px) {
+    body.lock {
+      overflow: hidden;
+    }
+  
     .desc {
         display: none;
     }
     .mobile {
         display: flex;
     }
+   
     .header_nav {
         position: absolute;
         right: 10px;
@@ -665,12 +595,21 @@ h1 {
     .howMuchCost_body {
       flex-direction: column;
       padding-left: 25px;
+      padding-bottom: 4rem;
     }
-   
-    
+    .howMuchCost_content > li {
+      text-align: center;
+    }  
+    .howMuchCost_btn  {
+      margin-left: 50%;
+      transform: translate(-50%);
+    } 
+    .howMuchCost_visual {
+      margin-top: 3rem;
+      align-items: center;
+    }
 }
 
 .navShow {
-    top: 10%;
-
+  top: 10%;
 }
