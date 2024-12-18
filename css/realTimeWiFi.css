@@ -1,0 +1,54 @@
+.realTimeWiFi {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 725px;
+    height: fit-content;
+    background: linear-gradient(-90deg, #FFFFFF 20.52%, #FFFEF9 20.52%, #FEFEF4 55%, #F3EC5E 79.45%, #FF8C00 125.13%);
+}
+.realTimeWiFi__body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;     
+}
+
+.realTimeWiFi__img {
+    flex: 0 0 55%;
+    min-width: 490px;
+    max-width: 750px;
+    background-image: url('../src/Dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    border-radius: 16px;
+    
+}
+
+.realTimeWiFi__content {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 4rem;
+   
+}
+@media (max-width: 1250px) {
+    .realTimeWiFi__body {
+        flex-direction: column;
+        
+    }
+   
+    .realTimeWiFi__content {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+    .realTimeWiFi__img {
+        margin: 0 auto;
+        margin-top: 10%;       
+        min-height: 500px;
+    }
+    
+
+}
