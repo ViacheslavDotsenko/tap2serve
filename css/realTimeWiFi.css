@@ -46,8 +46,9 @@
     }
     .realTimeWiFi__img {
         margin: 0 auto;
-        margin-top: 10%;       
-        min-height: 500px;
+        margin-top: 10%;
+        min-width: 300px;       
+        min-height: 400px;
     }
     
 
