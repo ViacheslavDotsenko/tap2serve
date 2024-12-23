@@ -1,5 +1,16 @@
 .features {
-    /* Основний фон, відступи, або ширина секції */
+    position: relative;
+    
+}
+.features::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 145px;
+    top: 0;
+    right: 20%;
+    background-image: url(../src/image2QR.svg);
+    background-size: contain;
 }
 
 .features__body {

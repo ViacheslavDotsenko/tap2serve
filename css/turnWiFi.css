@@ -1,0 +1,49 @@
+.turnWiFi {
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FEF3C7;
+}
+.turnWiFi::before {
+    position: absolute;
+    content: '';
+    width: 327px;
+    height: 327px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: -164px;
+    right: -164px;   
+}
+
+.turnWiFi::after {
+    position: absolute;
+    content: '';
+    width: 327px;
+    height: 327px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    bottom: -164px;
+    left: -164px;   
+}
+
+.turnWiFi__body { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    max-width: 750px;
+    min-height: 430px;
+    z-index: 1;    
+}
+.turnWiFi__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 48px;
+}
+.turnWiFi__discription {
+    text-align: center;
+}
