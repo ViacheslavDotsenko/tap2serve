@@ -3,8 +3,10 @@
 @import url('./form_checkbox.css');
 @import url('./realTimeWiFi.css');
 @import url('./features.css');
-@import url('./footer.css');
+@import url('./tools.css');
 @import url('./turnWiFi.css');
+@import url('./footer.css');
+
 
 
 
@@ -409,7 +411,8 @@ h1 {
  
   .monetizeWiFi_pre-title,
   .howMuchCost_pre-title,
-  .realTimeWiFi__pre-title {
+  .realTimeWiFi__pre-title,
+  .tools__pre-title {
     margin-bottom: 0.5rem;
     color:  #D97706;
     font-weight: 500;
@@ -417,20 +420,23 @@ h1 {
   }
   .monetizeWiFi_title,
   .howMuchCost_title,
-  .realTimeWiFi__title {
+  .realTimeWiFi__title,
+  .tools__title {
     margin-bottom: 3rem;
     font-weight: 800;
     font-size: 48px;    
   }
   .monetizeWiFi_Sub-title,
   .howMuchCost_Sub-title,
-  .realTimeWiFi__Sub-title {
+  .realTimeWiFi__Sub-title,
+  .tools__Sub-title {
     margin-bottom: 3rem;
     font-weight: 400;
     font-size: 22px;
   }
   .monetizeWiFi_Sub-title-disc,
-  .realTimeWiFi__Sub-title-disc {
+  .realTimeWiFi__Sub-title-disc,
+  .tools__Sub-title-disc {
     margin-bottom: 2rem;
     font-size: 18px;
     font-weight: 500;
