@@ -19,3 +19,25 @@ document.addEventListener('click', (event) => {
     back.classList.remove('lock');
   }
 });
+
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+  event.preventDefault(); 
+
+  
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    organization: document.getElementById('organization').value,
+    message: document.getElementById('message').value,
+  };
+
+  
+  console.log('Form Data Submitted:', formData);
+
+  
+  this.reset();
+
+
+  alert('Your message has been sent successfully!');
+});

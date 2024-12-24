@@ -1,0 +1,82 @@
+
+  .form__body {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    background-image: url(../src/QR3.svg);
+    background-repeat: no-repeat;
+    background-position: 25% 0;
+  }
+
+  .form__title {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 2rem;
+  }
+
+  .form__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 278px;
+  }
+
+  .form__contact > span {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+  } 
+
+  .main__form-input,
+  .main__form-textarea {
+    border: none;
+    border-bottom: 2px solid #ccc; 
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  .main__form-textarea {
+    margin-left: 2rem;
+  }
+
+  .form__textarea {
+    resize: vertical;
+    height: 100px;
+    
+  }
+
+  .main__form-button {
+       margin-left: auto;
+  }
+
+  .form__button:hover {
+    background-color: #0056b3;
+  }
+
+  .main__form-input:focus::placeholder,
+  .main__form-textarea:focus::placeholder {
+    color: transparent;
+  }
+  @media (max-width: 980px) {
+    .form__contact {
+        padding-left: 1rem;
+        gap: 1rem;
+    }
+
+    .form__contact > span {        
+        flex-direction: column;
+
+      }
+      .form__contact > span:first-child {
+        margin-bottom: 1rem;
+      }
+      .main__form-textarea {
+        margin-top: 2rem;
+        margin-left: 0rem;
+      }
+
+  }

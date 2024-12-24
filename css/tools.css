@@ -1,5 +1,5 @@
 .tools {
-    padding: 4rem 0;
+    padding: 6rem 0;
     height: fit-content;
 }
 
@@ -24,6 +24,7 @@
     background-position: center;
     background-image: url(../src/backgroundSochiable.webp);
 }
+
 
 @media (max-width: 980px) {
     .tools__body {
