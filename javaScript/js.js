@@ -41,3 +41,24 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
   alert('Your message has been sent successfully!');
 });
+
+
+let dotX = 0, dotY = 0;
+let targetX = 0, targetY = 0;
+const speed = 0.1; 
+const dot = document.getElementById("cursor-dot");
+
+document.addEventListener("mousemove", (event) => {
+    targetX = event.clientX;
+    targetY = event.clientY;
+});
+
+function animateDot() {    
+    dotX += (targetX - dotX) * speed;
+    dotY += (targetY - dotY) * speed;
+  
+    dot.style.left = `${dotX}px`;
+    dot.style.top = `${dotY}px`;    
+    requestAnimationFrame(animateDot);
+}
+animateDot();

@@ -26,8 +26,25 @@
     font-weight: 500;
 }
 .header_nav_link > li {
-    white-space: nowrap;
+  position: relative;
+  white-space: nowrap;
 }
+.header_nav_link > li::before {
+  position: absolute;
+  width: 85%;
+  border: 1px solid rgba(255, 204, 0, 1);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  content: "";
+  
+}
+.header_nav_link > li:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
 .hiddenNav {
     background-color: #f2e644;
 }
